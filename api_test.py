@@ -1,3 +1,6 @@
+from pprint import pprint
+
+
 def check_python_version():
     from utils import check_python_version
 
@@ -12,7 +15,7 @@ def check_api():
     ywAPI = YandexWeatherAPI()
     resp = ywAPI.get_forecasting(CITY_NAME_FOR_TEST)
     attr = resp.get("info")
-    print(attr)
+    pprint(attr)
 
 
 if __name__ == "__main__":
