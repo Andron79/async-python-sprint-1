@@ -20,13 +20,24 @@ ERR_MESSAGE_TEMPLATE = "Something wrong. Please contact with mentor."
 MIN_MAJOR_PYTHON_VER = 3
 MIN_MINOR_PYTHON_VER = 9
 
+# time limit
+MIN_HOUR = 9
+MAX_HOUR = 19
+
+
+GOOD_WEATHER = [
+    'clear',
+    'partly-cloudy',
+    'cloudy',
+    'overcast',
+]
 
 def check_python_version():
     import sys
 
     if (
-        sys.version_info.major < MIN_MAJOR_PYTHON_VER
-        or sys.version_info.minor < MIN_MINOR_PYTHON_VER
+            sys.version_info.major < MIN_MAJOR_PYTHON_VER
+            or sys.version_info.minor < MIN_MINOR_PYTHON_VER
     ):
         raise Exception(
             "Please use python version >= {}.{}".format(
