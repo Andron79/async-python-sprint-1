@@ -24,30 +24,35 @@ def forecast_weather():
     """
     Анализ погодных условий по городам
     """
-    cities = CITIES.keys()
-    workers = len(cities)
-    logger.debug("Thread workers count %s", workers)
-    with ThreadPoolExecutor(max_workers=workers) as executor:
-        futures = executor.map(DataFetchingTask.fetch_data, CITIES)
-        data = list(futures)
-    workers_cpu = multiprocessing.cpu_count() - 1
-    logger.info(f"Pool workers count {workers_cpu}")
+    try:
+        DataFetchingTask.save_data_to_file(CITIES)
+    except Exception:
+        raise Exception('Ошибка при получении данных из API')
+    # data = DataFetchingTask.get_data()
+    # logger.info(data)
+
+    # cities = CITIES.keys()
+    # workers_cpu = multiprocessing.cpu_count() - 1
+    # logger.info(f"Количество pool workers {workers_cpu}")
     manager = multiprocessing.Manager()
     queue = manager.Queue()
-    calculation = DataCalculationTask(queue=queue)
-    aggregation = DataAggregationTask(queue=queue)
+    # calculation = DataCalculationTask(queue=queue)
+    # aggregation = DataAggregationTask(queue=queue)
+    # cities1 = [city for city in data]
+    process_producer = DataCalculationTask(queue)
+    process_producer.start()
+    process_producer.join()
 
-    with Pool(processes=workers_cpu) as pool:
-        tasks_timeout = len(cities)
-        calculation_result = pool.map_async(calculation.run, data)
-        aggregation_result = pool.apply_async(aggregation.run)
-        calculation_result.wait(timeout=tasks_timeout)
-        logger.info(aggregation_result)
-        logger.info(calculation_result)
-        if not calculation_result.ready():
-            logger.error("f'Tasks calculation doesnt completed after timeout={tasks_timeout} seconds")
-            raise TimeoutError
-        queue.put(None)
+    # with Pool(processes=workers_cpu) as pool:
+    #     tasks_timeout = len(cities)
+    #     calculation_result = pool.starmap(calculation.run, data)
+    #     # aggregation_result = pool.apply_async(aggregation.run)
+    #     calculation_result.wait(timeout=tasks_timeout)
+
+        # if not calculation_result.ready():
+        #     logger.error("f'Tasks calculation doesnt completed after timeout={tasks_timeout} seconds")
+        #     raise TimeoutError
+        # queue.put(None)
         # aggregation_result.wait()
 
 

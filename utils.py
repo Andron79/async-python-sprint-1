@@ -24,13 +24,13 @@ MIN_MINOR_PYTHON_VER = 9
 MIN_HOUR = 9
 MAX_HOUR = 19
 
-
 GOOD_WEATHER = [
     'clear',
     'partly-cloudy',
     'cloudy',
     'overcast',
 ]
+
 
 def check_python_version():
     import sys
