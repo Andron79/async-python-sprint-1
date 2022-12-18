@@ -8,7 +8,6 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from multiprocessing import Queue, current_process
 from multiprocessing.dummy import Pool
 
-
 from tasks import (
     DataFetchingTask,
     DataCalculationTask,
@@ -49,11 +48,11 @@ def forecast_weather():
     #     # aggregation_result = pool.apply_async(aggregation.run)
     #     calculation_result.wait(timeout=tasks_timeout)
 
-        # if not calculation_result.ready():
-        #     logger.error("f'Tasks calculation doesnt completed after timeout={tasks_timeout} seconds")
-        #     raise TimeoutError
-        # queue.put(None)
-        # aggregation_result.wait()
+    # if not calculation_result.ready():
+    #     logger.error("f'Tasks calculation doesnt completed after timeout={tasks_timeout} seconds")
+    #     raise TimeoutError
+    # queue.put(None)
+    # aggregation_result.wait()
 
 
 if __name__ == "__main__":
