@@ -27,20 +27,16 @@ def forecast_weather():
         DataFetchingTask.save_data_to_file(CITIES)
     except Exception:
         raise Exception('Ошибка при получении данных из API')
-    # data = DataFetchingTask.get_data()
-    # logger.info(data)
-
-    # cities = CITIES.keys()
     # workers_cpu = multiprocessing.cpu_count() - 1
     # logger.info(f"Количество pool workers {workers_cpu}")
     manager = multiprocessing.Manager()
     queue = manager.Queue()
-    # calculation = DataCalculationTask(queue=queue)
-    # aggregation = DataAggregationTask(queue=queue)
-    # cities1 = [city for city in data]
     process_producer = DataCalculationTask(queue)
+    aggregation = DataAggregationTask(queue)
     process_producer.start()
+    aggregation.start()
     process_producer.join()
+    aggregation.join()
 
     # with Pool(processes=workers_cpu) as pool:
     #     tasks_timeout = len(cities)
