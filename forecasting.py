@@ -32,11 +32,11 @@ def forecast_weather():
     manager = multiprocessing.Manager()
     queue = manager.Queue()
     process_producer = DataCalculationTask(queue)
-    aggregation = DataAggregationTask(queue)
+    process_consumer = DataAggregationTask(queue)
     process_producer.start()
-    aggregation.start()
     process_producer.join()
-    aggregation.join()
+    process_consumer.start()
+    process_consumer.join()
 
     # with Pool(processes=workers_cpu) as pool:
     #     tasks_timeout = len(cities)
@@ -48,7 +48,7 @@ def forecast_weather():
     #     logger.error("f'Tasks calculation doesnt completed after timeout={tasks_timeout} seconds")
     #     raise TimeoutError
     # queue.put(None)
-    # aggregation_result.wait()
+    # aggregation.wait()
 
 
 if __name__ == "__main__":

@@ -101,8 +101,8 @@ class DataAggregationTask(Process):
             if self.queue.empty():
                 logger.info('Очередь пуста')
                 self.queue.join()
-            if self.queue.full():
-                logger.info('Очередь заполнена')
+        #     if self.queue.full():
+        #         logger.info('Очередь заполнена')
             item = self.queue.get()
             pprint(item)
             # logger.info(item)
