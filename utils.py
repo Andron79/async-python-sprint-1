@@ -1,3 +1,8 @@
+import json
+import logging
+
+logger = logging.getLogger(__name__)
+
 CITIES = {
     "MOSCOW": "https://code.s3.yandex.net/async-module/moscow-response.json",
     "PARIS": "https://code.s3.yandex.net/async-module/paris-response.json",
@@ -23,6 +28,25 @@ MIN_MINOR_PYTHON_VER = 9
 # time limit
 MIN_HOUR = 9
 MAX_HOUR = 19
+
+# json files
+CITIES_DATA_FILE = 'cities_data.json'
+API_DATA_FILE = 'data.json'
+
+
+def read_json_data_from_file(filename: str = None) -> json:
+    try:
+        with open(filename, 'r') as f:
+            data = json.loads(f.read())
+    except FileNotFoundError:
+        raise Exception(f'Файл {filename} не существует')
+    return data
+
+
+def save_json_data_to_file(json_data: dict = None, filename: str = None):
+    with open(filename, 'w') as f:
+        json.dump(json_data, f, sort_keys=True, indent=4)
+
 
 GOOD_WEATHER = [
     'clear',

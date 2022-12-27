@@ -1,0 +1,362 @@
+{
+    "ABUDHABI": {
+        "2022-05-26": {
+            "day_avg_temp": 35.0,
+            "day_comfort_hours": 10
+        },
+        "2022-05-27": {
+            "day_avg_temp": 34.85,
+            "day_comfort_hours": 10
+        },
+        "2022-05-28": {
+            "day_avg_temp": 34.6,
+            "day_comfort_hours": 10
+        },
+        "2022-05-29": {
+            "day_avg_temp": 34.5625,
+            "day_comfort_hours": 2
+        },
+        "2022-05-30": {
+            "day_avg_temp": 34.5625,
+            "day_comfort_hours": 0
+        },
+        "total_avg_temp": 34.714999999999996,
+        "total_comfort_hors": 32
+    },
+    "BEIJING": {
+        "2022-05-26": {
+            "day_avg_temp": 32.1,
+            "day_comfort_hours": 10
+        },
+        "2022-05-27": {
+            "day_avg_temp": 32.45,
+            "day_comfort_hours": 10
+        },
+        "2022-05-28": {
+            "day_avg_temp": 32.9,
+            "day_comfort_hours": 10
+        },
+        "2022-05-29": {
+            "day_avg_temp": 32.111111111111114,
+            "day_comfort_hours": 6
+        },
+        "2022-05-30": {
+            "day_avg_temp": 32.111111111111114,
+            "day_comfort_hours": 0
+        },
+        "total_avg_temp": 32.33444444444445,
+        "total_comfort_hors": 36
+    },
+    "BERLIN": {
+        "2022-05-26": {
+            "day_avg_temp": 19.2,
+            "day_comfort_hours": 8
+        },
+        "2022-05-27": {
+            "day_avg_temp": 17.65,
+            "day_comfort_hours": 6
+        },
+        "2022-05-28": {
+            "day_avg_temp": 16.333333333333332,
+            "day_comfort_hours": 0
+        },
+        "2022-05-29": {
+            "day_avg_temp": 16.333333333333332,
+            "day_comfort_hours": 0
+        },
+        "2022-05-30": {
+            "day_avg_temp": 16.333333333333332,
+            "day_comfort_hours": 0
+        },
+        "total_avg_temp": 17.169999999999995,
+        "total_comfort_hors": 14
+    },
+    "BUCHAREST": {
+        "2022-05-26": {
+            "day_avg_temp": 27.5,
+            "day_comfort_hours": 10
+        },
+        "2022-05-27": {
+            "day_avg_temp": 26.75,
+            "day_comfort_hours": 10
+        },
+        "2022-05-28": {
+            "day_avg_temp": 27.133333333333333,
+            "day_comfort_hours": 10
+        },
+        "2022-05-29": {
+            "day_avg_temp": 26.838709677419356,
+            "day_comfort_hours": 1
+        },
+        "2022-05-30": {
+            "day_avg_temp": 26.838709677419356,
+            "day_comfort_hours": 0
+        },
+        "total_avg_temp": 27.012150537634408,
+        "total_comfort_hors": 31
+    },
+    "CAIRO": {
+        "2022-05-26": {
+            "day_avg_temp": 32.6,
+            "day_comfort_hours": 10
+        },
+        "2022-05-27": {
+            "day_avg_temp": 32.9,
+            "day_comfort_hours": 10
+        },
+        "2022-05-28": {
+            "day_avg_temp": 33.43333333333333,
+            "day_comfort_hours": 10
+        },
+        "2022-05-29": {
+            "day_avg_temp": 33.43333333333333,
+            "day_comfort_hours": 0
+        },
+        "2022-05-30": {
+            "day_avg_temp": 33.43333333333333,
+            "day_comfort_hours": 0
+        },
+        "total_avg_temp": 33.160000000000004,
+        "total_comfort_hors": 30
+    },
+    "KALININGRAD": {
+        "2022-05-26": {
+            "day_avg_temp": 15.5,
+            "day_comfort_hours": 8
+        },
+        "2022-05-27": {
+            "day_avg_temp": 14.2,
+            "day_comfort_hours": 2
+        },
+        "2022-05-28": {
+            "day_avg_temp": 13.333333333333334,
+            "day_comfort_hours": 1
+        },
+        "2022-05-29": {
+            "day_avg_temp": 13.333333333333334,
+            "day_comfort_hours": 0
+        },
+        "2022-05-30": {
+            "day_avg_temp": 13.333333333333334,
+            "day_comfort_hours": 0
+        },
+        "total_avg_temp": 13.940000000000001,
+        "total_comfort_hors": 11
+    },
+    "KAZAN": {
+        "2022-05-26": {
+            "day_avg_temp": 12.6,
+            "day_comfort_hours": 6
+        },
+        "2022-05-27": {
+            "day_avg_temp": 13.15,
+            "day_comfort_hours": 0
+        },
+        "2022-05-28": {
+            "day_avg_temp": 13.666666666666666,
+            "day_comfort_hours": 3
+        },
+        "2022-05-29": {
+            "day_avg_temp": 13.67741935483871,
+            "day_comfort_hours": 1
+        },
+        "2022-05-30": {
+            "day_avg_temp": 13.67741935483871,
+            "day_comfort_hours": 0
+        },
+        "total_avg_temp": 13.354301075268816,
+        "total_comfort_hors": 10
+    },
+    "LONDON": {
+        "2022-05-26": {
+            "day_avg_temp": 17.3,
+            "day_comfort_hours": 10
+        },
+        "2022-05-27": {
+            "day_avg_temp": 16.75,
+            "day_comfort_hours": 10
+        },
+        "2022-05-28": {
+            "day_avg_temp": 16.066666666666666,
+            "day_comfort_hours": 10
+        },
+        "2022-05-29": {
+            "day_avg_temp": 16.066666666666666,
+            "day_comfort_hours": 0
+        },
+        "2022-05-30": {
+            "day_avg_temp": 16.066666666666666,
+            "day_comfort_hours": 0
+        },
+        "total_avg_temp": 16.449999999999996,
+        "total_comfort_hors": 30
+    },
+    "MOSCOW": {
+        "2022-05-26": {
+            "day_avg_temp": 18.0,
+            "day_comfort_hours": 7
+        },
+        "2022-05-27": {
+            "day_avg_temp": 15.55,
+            "day_comfort_hours": 0
+        },
+        "2022-05-28": {
+            "day_avg_temp": 14.433333333333334,
+            "day_comfort_hours": 0
+        },
+        "2022-05-29": {
+            "day_avg_temp": 14.35483870967742,
+            "day_comfort_hours": 1
+        },
+        "2022-05-30": {
+            "day_avg_temp": 14.35483870967742,
+            "day_comfort_hours": 0
+        },
+        "total_avg_temp": 15.338602150537636,
+        "total_comfort_hors": 8
+    },
+    "NOVOSIBIRSK": {
+        "2022-05-26": {
+            "day_avg_temp": 24.9,
+            "day_comfort_hours": 10
+        },
+        "2022-05-27": {
+            "day_avg_temp": 23.6,
+            "day_comfort_hours": 10
+        },
+        "2022-05-28": {
+            "day_avg_temp": 23.433333333333334,
+            "day_comfort_hours": 10
+        },
+        "2022-05-29": {
+            "day_avg_temp": 23.257142857142856,
+            "day_comfort_hours": 5
+        },
+        "2022-05-30": {
+            "day_avg_temp": 23.257142857142856,
+            "day_comfort_hours": 0
+        },
+        "total_avg_temp": 23.68952380952381,
+        "total_comfort_hors": 35
+    },
+    "PARIS": {
+        "2022-05-26": {
+            "day_avg_temp": 17.4,
+            "day_comfort_hours": 8
+        },
+        "2022-05-27": {
+            "day_avg_temp": 17.3,
+            "day_comfort_hours": 10
+        },
+        "2022-05-28": {
+            "day_avg_temp": 17.2,
+            "day_comfort_hours": 10
+        },
+        "2022-05-29": {
+            "day_avg_temp": 17.2,
+            "day_comfort_hours": 0
+        },
+        "2022-05-30": {
+            "day_avg_temp": 17.2,
+            "day_comfort_hours": 0
+        },
+        "total_avg_temp": 17.26,
+        "total_comfort_hors": 28
+    },
+    "ROMA": {
+        "2022-05-26": {
+            "day_avg_temp": 29.2,
+            "day_comfort_hours": 10
+        },
+        "2022-05-27": {
+            "day_avg_temp": 29.35,
+            "day_comfort_hours": 10
+        },
+        "2022-05-28": {
+            "day_avg_temp": 28.166666666666668,
+            "day_comfort_hours": 10
+        },
+        "2022-05-29": {
+            "day_avg_temp": 28.166666666666668,
+            "day_comfort_hours": 0
+        },
+        "2022-05-30": {
+            "day_avg_temp": 28.166666666666668,
+            "day_comfort_hours": 0
+        },
+        "total_avg_temp": 28.610000000000003,
+        "total_comfort_hors": 30
+    },
+    "SPETERSBURG": {
+        "2022-05-26": {
+            "day_avg_temp": 12.3,
+            "day_comfort_hours": 3
+        },
+        "2022-05-27": {
+            "day_avg_temp": 12.1,
+            "day_comfort_hours": 0
+        },
+        "2022-05-28": {
+            "day_avg_temp": 11.933333333333334,
+            "day_comfort_hours": 0
+        },
+        "2022-05-29": {
+            "day_avg_temp": 11.935483870967742,
+            "day_comfort_hours": 1
+        },
+        "2022-05-30": {
+            "day_avg_temp": 11.935483870967742,
+            "day_comfort_hours": 0
+        },
+        "total_avg_temp": 12.040860215053764,
+        "total_comfort_hors": 4
+    },
+    "VOLGOGRAD": {
+        "2022-05-26": {
+            "day_avg_temp": 22.1,
+            "day_comfort_hours": 10
+        },
+        "2022-05-27": {
+            "day_avg_temp": 22.0,
+            "day_comfort_hours": 10
+        },
+        "2022-05-28": {
+            "day_avg_temp": 23.233333333333334,
+            "day_comfort_hours": 10
+        },
+        "2022-05-29": {
+            "day_avg_temp": 23.29032258064516,
+            "day_comfort_hours": 1
+        },
+        "2022-05-30": {
+            "day_avg_temp": 23.29032258064516,
+            "day_comfort_hours": 0
+        },
+        "total_avg_temp": 22.78279569892473,
+        "total_comfort_hors": 31
+    },
+    "WARSZAWA": {
+        "2022-05-26": {
+            "day_avg_temp": 19.7,
+            "day_comfort_hours": 10
+        },
+        "2022-05-27": {
+            "day_avg_temp": 16.85,
+            "day_comfort_hours": 2
+        },
+        "2022-05-28": {
+            "day_avg_temp": 15.533333333333333,
+            "day_comfort_hours": 0
+        },
+        "2022-05-29": {
+            "day_avg_temp": 15.533333333333333,
+            "day_comfort_hours": 0
+        },
+        "2022-05-30": {
+            "day_avg_temp": 15.533333333333333,
+            "day_comfort_hours": 0
+        },
+        "total_avg_temp": 16.63,
+        "total_comfort_hors": 12
+    }
+}

@@ -1,15 +1,19 @@
-import json
 import logging
 from concurrent.futures import ThreadPoolExecutor
 from multiprocessing import Queue, Process
+from operator import itemgetter
 from pprint import pprint
 from typing import Optional, Any
-
 from pydantic import parse_obj_as
-
 from api_client import YandexWeatherAPI
-from models import CityDetailModel, ForecastsDetailModel
-from utils import MIN_HOUR, MAX_HOUR, GOOD_WEATHER
+from models import ForecastsDetailModel
+from utils import (
+    MIN_HOUR,
+    MAX_HOUR,
+    GOOD_WEATHER,
+    save_json_data_to_file,
+    read_json_data_from_file
+)
 
 logger = logging.getLogger(__name__)
 
@@ -22,7 +26,7 @@ class DataFetchingTask:
         return {city_name: result.dict()}
 
     @staticmethod
-    def save_data_to_file(city_data: dict = None):
+    def api_data_to_file(city_data: dict = None, filename: str = None):
         cities = city_data.keys()
         workers = len(cities)
         json_data = {}
@@ -32,21 +36,15 @@ class DataFetchingTask:
             for city in futures:
                 json_data.update(city)
         logger.info('Данные из API успешно получены')
-        with open('data.json', 'w') as f:
-            json.dump(json_data, f, sort_keys=True, indent=4)
-            logger.info('Данные сохранены во временный файл')
-
-    @staticmethod
-    def get_data():
-        with open('data.json', 'r') as f:
-            data = json.loads(f.read())
-        return data
+        save_json_data_to_file(json_data=json_data, filename=filename)
+        logger.info(f'Данные по городам сохранены в файл {filename}')
 
 
 class DataCalculationTask(Process):
-    def __init__(self, queue):
+    def __init__(self, queue: Optional[Queue] = None, filename: str = None):
         super().__init__()
         self.queue = queue
+        self.filename = filename
 
     @staticmethod
     def get_weather_condition(weather_condition: str) -> bool:
@@ -72,15 +70,17 @@ class DataCalculationTask(Process):
                     {
                         forecast_date:
                             {
-                                'avg_temp': avg_temp,
-                                'comfort_hours': comfort_hours
+                                'day_avg_temp': avg_temp,
+                                'day_comfort_hours': comfort_hours
                             }
-                    })
-        context = {city: data_context}
-        return context
+                    }
+                )
+        return {
+            city: data_context
+        }
 
     def run(self):
-        data = DataFetchingTask.get_data()
+        data = read_json_data_from_file(filename=self.filename)
         cities = data.keys()
         for city in cities:
             city_data = {city: data[city]['forecasts']}
@@ -92,21 +92,47 @@ class DataCalculationTask(Process):
 
 
 class DataAggregationTask(Process):
-    def __init__(self, queue: Optional[Queue] = None):
+    def __init__(self, queue: Optional[Queue] = None, filename: str = None):
         super().__init__()
         self.queue = queue
+        self.filename = filename
+
+    @staticmethod
+    def aggregation_city_data(city_data: dict) -> dict:
+        day_count = 0
+        total_avg_temp = 0
+        total_comfort_hors = 0
+        for dates in city_data.values():
+            for date in dates.values():
+                day_count += 1
+                total_avg_temp += date['day_avg_temp']
+                total_comfort_hors += date['day_comfort_hours']
+        city_data[list(city_data.keys())[0]]['total_avg_temp'] = total_avg_temp / day_count
+        city_data[list(city_data.keys())[0]]['total_comfort_hors'] = total_comfort_hors
+        return city_data
 
     def run(self):
+        all_cities_data = {}
         while True:
             if self.queue.empty():
-                logger.info('Очередь пуста')
-                self.queue.join()
-        #     if self.queue.full():
-        #         logger.info('Очередь заполнена')
-            item = self.queue.get()
-            pprint(item)
-            # logger.info(item)
+                save_json_data_to_file(
+                    json_data=all_cities_data,
+                    filename=self.filename
+                )
+                logger.info(f'Данные по городам сохранены в файл {self.filename}')
+                break
+            city_data = self.queue.get()
+            all_cities_data.update(self.aggregation_city_data(city_data))
 
 
 class DataAnalyzingTask:
-    pass
+    @staticmethod
+    def rating_analysis(filename: str = None):
+        cities_data = read_json_data_from_file(filename=filename)
+        total_list = [
+            (city, city_data['total_comfort_hors'], city_data['total_avg_temp'],)
+            for city, city_data in cities_data.items()
+        ]
+        avg_tmp_list = sorted(total_list, key=itemgetter(2), reverse=True)
+
+        print(avg_tmp_list)
