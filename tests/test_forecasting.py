@@ -16,8 +16,7 @@ from tasks import (
 from utils import (
     CITIES,
     API_DATA_FILE,
-    read_json_data_from_file,
-    CITIES_DATA_FILE
+    read_json_data_from_file
 )
 
 logger = logging.getLogger(__name__)
