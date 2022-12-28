@@ -1,0 +1,50 @@
+{
+    "ABUDHABI": {
+        "2022-05-26": {
+            "day_avg_temp": 35.0,
+            "day_comfort_hours": 10
+        },
+        "2022-05-27": {
+            "day_avg_temp": 34.85,
+            "day_comfort_hours": 10
+        },
+        "2022-05-28": {
+            "day_avg_temp": 34.6,
+            "day_comfort_hours": 10
+        },
+        "2022-05-29": {
+            "day_avg_temp": 34.5625,
+            "day_comfort_hours": 2
+        },
+        "2022-05-30": {
+            "day_avg_temp": 34.5625,
+            "day_comfort_hours": 0
+        },
+        "total_avg_temp": 34.71,
+        "total_comfort_hors": 32
+    },
+    "SPETERSBURG": {
+        "2022-05-26": {
+            "day_avg_temp": 12.3,
+            "day_comfort_hours": 3
+        },
+        "2022-05-27": {
+            "day_avg_temp": 12.1,
+            "day_comfort_hours": 0
+        },
+        "2022-05-28": {
+            "day_avg_temp": 11.933333333333334,
+            "day_comfort_hours": 0
+        },
+        "2022-05-29": {
+            "day_avg_temp": 11.935483870967742,
+            "day_comfort_hours": 1
+        },
+        "2022-05-30": {
+            "day_avg_temp": 11.935483870967742,
+            "day_comfort_hours": 0
+        },
+        "total_avg_temp": 12.04,
+        "total_comfort_hors": 4
+    }
+}

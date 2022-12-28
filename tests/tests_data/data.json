@@ -1,0 +1,883 @@
+{
+    "ABUDHABI": {
+        "forecasts": [
+            {
+                "date": "2022-05-26",
+                "hours": [
+                    {
+                        "condition": "clear",
+                        "hour": "0",
+                        "temp": 30
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "1",
+                        "temp": 30
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "2",
+                        "temp": 30
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "3",
+                        "temp": 30
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "4",
+                        "temp": 29
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "5",
+                        "temp": 29
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "6",
+                        "temp": 30
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "7",
+                        "temp": 31
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "8",
+                        "temp": 32
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "9",
+                        "temp": 33
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "10",
+                        "temp": 35
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "11",
+                        "temp": 35
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "12",
+                        "temp": 35
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "13",
+                        "temp": 36
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "14",
+                        "temp": 36
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "15",
+                        "temp": 36
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "16",
+                        "temp": 35
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "17",
+                        "temp": 35
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "18",
+                        "temp": 34
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "19",
+                        "temp": 33
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "20",
+                        "temp": 32
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "21",
+                        "temp": 32
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "22",
+                        "temp": 31
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "23",
+                        "temp": 31
+                    }
+                ]
+            },
+            {
+                "date": "2022-05-27",
+                "hours": [
+                    {
+                        "condition": "clear",
+                        "hour": "0",
+                        "temp": 31
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "1",
+                        "temp": 31
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "2",
+                        "temp": 30
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "3",
+                        "temp": 30
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "4",
+                        "temp": 30
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "5",
+                        "temp": 30
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "6",
+                        "temp": 30
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "7",
+                        "temp": 31
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "8",
+                        "temp": 32
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "9",
+                        "temp": 33
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "10",
+                        "temp": 34
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "11",
+                        "temp": 35
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "12",
+                        "temp": 35
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "13",
+                        "temp": 36
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "14",
+                        "temp": 36
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "15",
+                        "temp": 36
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "16",
+                        "temp": 35
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "17",
+                        "temp": 34
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "18",
+                        "temp": 33
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "19",
+                        "temp": 32
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "20",
+                        "temp": 31
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "21",
+                        "temp": 31
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "22",
+                        "temp": 31
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "23",
+                        "temp": 31
+                    }
+                ]
+            },
+            {
+                "date": "2022-05-28",
+                "hours": [
+                    {
+                        "condition": "clear",
+                        "hour": "0",
+                        "temp": 31
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "1",
+                        "temp": 31
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "2",
+                        "temp": 30
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "3",
+                        "temp": 30
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "4",
+                        "temp": 30
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "5",
+                        "temp": 30
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "6",
+                        "temp": 30
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "7",
+                        "temp": 30
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "8",
+                        "temp": 32
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "9",
+                        "temp": 33
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "10",
+                        "temp": 34
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "11",
+                        "temp": 34
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "12",
+                        "temp": 35
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "13",
+                        "temp": 35
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "14",
+                        "temp": 35
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "15",
+                        "temp": 35
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "16",
+                        "temp": 34
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "17",
+                        "temp": 34
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "18",
+                        "temp": 32
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "19",
+                        "temp": 31
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "20",
+                        "temp": 31
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "21",
+                        "temp": 31
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "22",
+                        "temp": 31
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "23",
+                        "temp": 30
+                    }
+                ]
+            },
+            {
+                "date": "2022-05-29",
+                "hours": [
+                    {
+                        "condition": "clear",
+                        "hour": "0",
+                        "temp": 30
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "1",
+                        "temp": 29
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "2",
+                        "temp": 29
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "3",
+                        "temp": 29
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "4",
+                        "temp": 29
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "5",
+                        "temp": 28
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "6",
+                        "temp": 28
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "7",
+                        "temp": 30
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "8",
+                        "temp": 31
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "9",
+                        "temp": 33
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "10",
+                        "temp": 35
+                    }
+                ]
+            },
+            {
+                "date": "2022-05-30",
+                "hours": []
+            }
+        ]
+    },
+    "SPETERSBURG": {
+        "forecasts": [
+            {
+                "date": "2022-05-26",
+                "hours": [
+                    {
+                        "condition": "clear",
+                        "hour": "0",
+                        "temp": 9
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "1",
+                        "temp": 8
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "2",
+                        "temp": 7
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "3",
+                        "temp": 6
+                    },
+                    {
+                        "condition": "clear",
+                        "hour": "4",
+                        "temp": 6
+                    },
+                    {
+                        "condition": "cloudy",
+                        "hour": "5",
+                        "temp": 7
+                    },
+                    {
+                        "condition": "overcast",
+                        "hour": "6",
+                        "temp": 8
+                    },
+                    {
+                        "condition": "overcast",
+                        "hour": "7",
+                        "temp": 9
+                    },
+                    {
+                        "condition": "overcast",
+                        "hour": "8",
+                        "temp": 10
+                    },
+                    {
+                        "condition": "overcast",
+                        "hour": "9",
+                        "temp": 11
+                    },
+                    {
+                        "condition": "overcast",
+                        "hour": "10",
+                        "temp": 12
+                    },
+                    {
+                        "condition": "overcast",
+                        "hour": "11",
+                        "temp": 13
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "12",
+                        "temp": 13
+                    },
+                    {
+                        "condition": "rain",
+                        "hour": "13",
+                        "temp": 13
+                    },
+                    {
+                        "condition": "rain",
+                        "hour": "14",
+                        "temp": 13
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "15",
+                        "temp": 14
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "16",
+                        "temp": 12
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "17",
+                        "temp": 11
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "18",
+                        "temp": 11
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "19",
+                        "temp": 11
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "20",
+                        "temp": 10
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "21",
+                        "temp": 10
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "22",
+                        "temp": 10
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "23",
+                        "temp": 9
+                    }
+                ]
+            },
+            {
+                "date": "2022-05-27",
+                "hours": [
+                    {
+                        "condition": "light-rain",
+                        "hour": "0",
+                        "temp": 9
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "1",
+                        "temp": 9
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "2",
+                        "temp": 9
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "3",
+                        "temp": 9
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "4",
+                        "temp": 9
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "5",
+                        "temp": 9
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "6",
+                        "temp": 9
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "7",
+                        "temp": 9
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "8",
+                        "temp": 10
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "9",
+                        "temp": 10
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "10",
+                        "temp": 11
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "11",
+                        "temp": 11
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "12",
+                        "temp": 12
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "13",
+                        "temp": 13
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "14",
+                        "temp": 13
+                    },
+                    {
+                        "condition": "showers",
+                        "hour": "15",
+                        "temp": 13
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "16",
+                        "temp": 12
+                    },
+                    {
+                        "condition": "showers",
+                        "hour": "17",
+                        "temp": 12
+                    },
+                    {
+                        "condition": "showers",
+                        "hour": "18",
+                        "temp": 12
+                    },
+                    {
+                        "condition": "showers",
+                        "hour": "19",
+                        "temp": 11
+                    },
+                    {
+                        "condition": "showers",
+                        "hour": "20",
+                        "temp": 11
+                    },
+                    {
+                        "condition": "showers",
+                        "hour": "21",
+                        "temp": 11
+                    },
+                    {
+                        "condition": "showers",
+                        "hour": "22",
+                        "temp": 10
+                    },
+                    {
+                        "condition": "showers",
+                        "hour": "23",
+                        "temp": 10
+                    }
+                ]
+            },
+            {
+                "date": "2022-05-28",
+                "hours": [
+                    {
+                        "condition": "light-rain",
+                        "hour": "0",
+                        "temp": 9
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "1",
+                        "temp": 9
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "2",
+                        "temp": 9
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "3",
+                        "temp": 9
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "4",
+                        "temp": 9
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "5",
+                        "temp": 8
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "6",
+                        "temp": 8
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "7",
+                        "temp": 9
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "8",
+                        "temp": 10
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "9",
+                        "temp": 10
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "10",
+                        "temp": 11
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "11",
+                        "temp": 11
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "12",
+                        "temp": 12
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "13",
+                        "temp": 12
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "14",
+                        "temp": 12
+                    },
+                    {
+                        "condition": "showers",
+                        "hour": "15",
+                        "temp": 12
+                    },
+                    {
+                        "condition": "showers",
+                        "hour": "16",
+                        "temp": 12
+                    },
+                    {
+                        "condition": "showers",
+                        "hour": "17",
+                        "temp": 12
+                    },
+                    {
+                        "condition": "showers",
+                        "hour": "18",
+                        "temp": 12
+                    },
+                    {
+                        "condition": "showers",
+                        "hour": "19",
+                        "temp": 12
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "20",
+                        "temp": 12
+                    },
+                    {
+                        "condition": "cloudy",
+                        "hour": "21",
+                        "temp": 11
+                    },
+                    {
+                        "condition": "cloudy",
+                        "hour": "22",
+                        "temp": 10
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "23",
+                        "temp": 10
+                    }
+                ]
+            },
+            {
+                "date": "2022-05-29",
+                "hours": [
+                    {
+                        "condition": "light-rain",
+                        "hour": "0",
+                        "temp": 9
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "1",
+                        "temp": 9
+                    },
+                    {
+                        "condition": "cloudy",
+                        "hour": "2",
+                        "temp": 9
+                    },
+                    {
+                        "condition": "overcast",
+                        "hour": "3",
+                        "temp": 8
+                    },
+                    {
+                        "condition": "overcast",
+                        "hour": "4",
+                        "temp": 8
+                    },
+                    {
+                        "condition": "overcast",
+                        "hour": "5",
+                        "temp": 8
+                    },
+                    {
+                        "condition": "overcast",
+                        "hour": "6",
+                        "temp": 9
+                    },
+                    {
+                        "condition": "overcast",
+                        "hour": "7",
+                        "temp": 10
+                    },
+                    {
+                        "condition": "light-rain",
+                        "hour": "8",
+                        "temp": 11
+                    },
+                    {
+                        "condition": "cloudy",
+                        "hour": "9",
+                        "temp": 12
+                    }
+                ]
+            },
+            {
+                "date": "2022-05-30",
+                "hours": []
+            }
+        ]
+    }
+}

@@ -146,8 +146,10 @@ class DataAnalyzingTask:
         ]
         rating_all_cities = sorted(total_cities_list, key=itemgetter(2), reverse=True)
         best_city = rating_all_cities[0]
-
+        matching_rating_cities_list = []
         for city in rating_all_cities:
             if city[1] >= best_city[1] and city[2] >= best_city[2]:
+                matching_rating_cities_list.append(city)
                 print(f'Победитель рейтинга {city[0]} средняя температура за период составила {city[2]} градуса, '
                       f'кол-во благоприятных дней: {city[1]}')
+        return matching_rating_cities_list
