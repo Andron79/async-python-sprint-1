@@ -20,7 +20,7 @@
             "day_avg_temp": 34.5625,
             "day_comfort_hours": 0
         },
-        "total_avg_temp": 34.714999999999996,
+        "total_avg_temp": 34.71,
         "total_comfort_hors": 32
     },
     "BEIJING": {
@@ -44,7 +44,7 @@
             "day_avg_temp": 32.111111111111114,
             "day_comfort_hours": 0
         },
-        "total_avg_temp": 32.33444444444445,
+        "total_avg_temp": 32.33,
         "total_comfort_hors": 36
     },
     "BERLIN": {
@@ -68,7 +68,7 @@
             "day_avg_temp": 16.333333333333332,
             "day_comfort_hours": 0
         },
-        "total_avg_temp": 17.169999999999995,
+        "total_avg_temp": 17.17,
         "total_comfort_hors": 14
     },
     "BUCHAREST": {
@@ -92,7 +92,7 @@
             "day_avg_temp": 26.838709677419356,
             "day_comfort_hours": 0
         },
-        "total_avg_temp": 27.012150537634408,
+        "total_avg_temp": 27.01,
         "total_comfort_hors": 31
     },
     "CAIRO": {
@@ -116,7 +116,7 @@
             "day_avg_temp": 33.43333333333333,
             "day_comfort_hours": 0
         },
-        "total_avg_temp": 33.160000000000004,
+        "total_avg_temp": 33.16,
         "total_comfort_hors": 30
     },
     "KALININGRAD": {
@@ -140,7 +140,7 @@
             "day_avg_temp": 13.333333333333334,
             "day_comfort_hours": 0
         },
-        "total_avg_temp": 13.940000000000001,
+        "total_avg_temp": 13.94,
         "total_comfort_hors": 11
     },
     "KAZAN": {
@@ -164,7 +164,7 @@
             "day_avg_temp": 13.67741935483871,
             "day_comfort_hours": 0
         },
-        "total_avg_temp": 13.354301075268816,
+        "total_avg_temp": 13.35,
         "total_comfort_hors": 10
     },
     "LONDON": {
@@ -188,7 +188,7 @@
             "day_avg_temp": 16.066666666666666,
             "day_comfort_hours": 0
         },
-        "total_avg_temp": 16.449999999999996,
+        "total_avg_temp": 16.45,
         "total_comfort_hors": 30
     },
     "MOSCOW": {
@@ -212,7 +212,7 @@
             "day_avg_temp": 14.35483870967742,
             "day_comfort_hours": 0
         },
-        "total_avg_temp": 15.338602150537636,
+        "total_avg_temp": 15.34,
         "total_comfort_hors": 8
     },
     "NOVOSIBIRSK": {
@@ -236,7 +236,7 @@
             "day_avg_temp": 23.257142857142856,
             "day_comfort_hours": 0
         },
-        "total_avg_temp": 23.68952380952381,
+        "total_avg_temp": 23.69,
         "total_comfort_hors": 35
     },
     "PARIS": {
@@ -284,7 +284,7 @@
             "day_avg_temp": 28.166666666666668,
             "day_comfort_hours": 0
         },
-        "total_avg_temp": 28.610000000000003,
+        "total_avg_temp": 28.61,
         "total_comfort_hors": 30
     },
     "SPETERSBURG": {
@@ -308,7 +308,7 @@
             "day_avg_temp": 11.935483870967742,
             "day_comfort_hours": 0
         },
-        "total_avg_temp": 12.040860215053764,
+        "total_avg_temp": 12.04,
         "total_comfort_hors": 4
     },
     "VOLGOGRAD": {
@@ -332,7 +332,7 @@
             "day_avg_temp": 23.29032258064516,
             "day_comfort_hours": 0
         },
-        "total_avg_temp": 22.78279569892473,
+        "total_avg_temp": 22.78,
         "total_comfort_hors": 31
     },
     "WARSZAWA": {

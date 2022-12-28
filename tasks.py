@@ -2,7 +2,6 @@ import logging
 from concurrent.futures import ThreadPoolExecutor
 from multiprocessing import Queue, Process
 from operator import itemgetter
-from pprint import pprint
 from typing import Optional, Any
 from pydantic import parse_obj_as
 from api_client import YandexWeatherAPI
@@ -27,6 +26,9 @@ class DataFetchingTask:
 
     @staticmethod
     def api_data_to_file(city_data: dict = None, filename: str = None):
+        """
+        Сохранение данных, полученных из API в файл
+        """
         cities = city_data.keys()
         workers = len(cities)
         json_data = {}
@@ -52,6 +54,9 @@ class DataCalculationTask(Process):
 
     @staticmethod
     def day_temperature_and_condition_calc(data) -> dict:
+        """
+        Вычисление средней температуры и благоприятных часов по каждому дню
+        """
         temperature_by_hour = []
         data_context = {}
         city = list(data.keys())[0]
@@ -99,6 +104,9 @@ class DataAggregationTask(Process):
 
     @staticmethod
     def aggregation_city_data(city_data: dict) -> dict:
+        """
+        Агрегация средней температуры и благоприятных дней к каждому городу за все дни
+        """
         day_count = 0
         total_avg_temp = 0
         total_comfort_hors = 0
@@ -107,7 +115,7 @@ class DataAggregationTask(Process):
                 day_count += 1
                 total_avg_temp += date['day_avg_temp']
                 total_comfort_hors += date['day_comfort_hours']
-        city_data[list(city_data.keys())[0]]['total_avg_temp'] = total_avg_temp / day_count
+        city_data[list(city_data.keys())[0]]['total_avg_temp'] = round(total_avg_temp / day_count, 2)
         city_data[list(city_data.keys())[0]]['total_comfort_hors'] = total_comfort_hors
         return city_data
 
@@ -128,11 +136,18 @@ class DataAggregationTask(Process):
 class DataAnalyzingTask:
     @staticmethod
     def rating_analysis(filename: str = None):
+        """
+        Вычисление и вывод рейтинга по городам
+        """
         cities_data = read_json_data_from_file(filename=filename)
-        total_list = [
+        total_cities_list = [
             (city, city_data['total_comfort_hors'], city_data['total_avg_temp'],)
             for city, city_data in cities_data.items()
         ]
-        avg_tmp_list = sorted(total_list, key=itemgetter(2), reverse=True)
+        rating_all_cities = sorted(total_cities_list, key=itemgetter(2), reverse=True)
+        best_city = rating_all_cities[0]
 
-        print(avg_tmp_list)
+        for city in rating_all_cities:
+            if city[1] >= best_city[1] and city[2] >= best_city[2]:
+                print(f'Победитель рейтинга {city[0]} средняя температура за период составила {city[2]} градуса, '
+                      f'кол-во благоприятных дней: {city[1]}')
