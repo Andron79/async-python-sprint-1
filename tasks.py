@@ -20,8 +20,8 @@ logger = logging.getLogger(__name__)
 class DataFetchingTask:
     @staticmethod
     def _fetch_data(city_name: str) -> dict[Any, Any]:
-        ywAPI = YandexWeatherAPI()
-        result = parse_obj_as(ForecastsDetailModel, ywAPI.get_forecasting(city_name))
+        yw_api = YandexWeatherAPI()
+        result = parse_obj_as(ForecastsDetailModel, yw_api.get_forecasting(city_name))
         return {city_name: result.dict()}
 
     @staticmethod
@@ -30,10 +30,8 @@ class DataFetchingTask:
         Сохранение данных, полученных из API в файл
         """
         cities = city_data.keys()
-        workers = len(cities)
         json_data = {}
-        logger.info(f"Потоков - {workers}")
-        with ThreadPoolExecutor(max_workers=workers) as executor:
+        with ThreadPoolExecutor() as executor:
             futures = executor.map(DataFetchingTask._fetch_data, city_data)
             for city in futures:
                 json_data.update(city)
