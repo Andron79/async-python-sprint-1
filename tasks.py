@@ -29,7 +29,7 @@ class DataFetchingTask:
         """
         Сохранение данных, полученных из API в файл
         """
-        cities = city_data.keys()
+        # cities = city_data.keys()
         json_data = {}
         with ThreadPoolExecutor() as executor:
             futures = executor.map(DataFetchingTask._fetch_data, city_data)
