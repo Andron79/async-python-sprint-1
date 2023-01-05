@@ -30,8 +30,8 @@ MIN_HOUR = 9
 MAX_HOUR = 19
 
 # json files
-CITIES_DATA_FILE = 'cities_data.json'
-API_DATA_FILE = 'data.json'
+CITIES_DATA_FILE = 'result_cities_data.json'
+API_DATA_FILE = 'saved_data_from_api.json'
 
 
 def read_json_data_from_file(filename: str = None) -> json:
