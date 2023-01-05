@@ -121,8 +121,7 @@ class DataAggregationTask(Process):
         return city_data
 
     @staticmethod
-    def save_data_to_file(filename: str = None, data: dict = None):
-        lock = Lock()
+    def save_data_to_file(filename: str = None, data: dict = None, lock: bool = True):
         with lock:
             with open(filename, 'a') as f:
                 json.dump(data, f, sort_keys=True, indent=4)
@@ -130,9 +129,10 @@ class DataAggregationTask(Process):
     def run(self):
         while True:
             if self.queue.empty():
+                lock = Lock()
                 cities_data = DataAnalyzingTask.all_cities_rating(self.all_cities_data)
                 threads = [Thread(target=DataAggregationTask().save_data_to_file,
-                                  args=(self.filename, data, )) for data in cities_data]
+                                  args=(self.filename, data, lock, )) for data in cities_data]
                 for thread in threads:
                     thread.start()
                 for thread in threads:
@@ -145,7 +145,6 @@ class DataAggregationTask(Process):
 
 
 class DataAnalyzingTask:
-
     @staticmethod
     def all_cities_rating(cities_data: dict = None) -> dict | None:
         """
