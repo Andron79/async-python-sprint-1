@@ -6,7 +6,6 @@ from tasks import (
     DataFetchingTask,
     DataCalculationTask,
     DataAggregationTask,
-    DataAnalyzingTask,
 )
 from utils import CITIES, CITIES_DATA_FILE, API_DATA_FILE
 
@@ -29,7 +28,6 @@ def forecast_weather():
     process_producer.join()
     process_consumer.start()
     process_consumer.join()
-    DataAnalyzingTask.rating_analysis(filename=CITIES_DATA_FILE)
 
 
 if __name__ == "__main__":

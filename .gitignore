@@ -224,5 +224,5 @@ dmypy.json
 cython_debug/
 learn.py
 .pytest_cache
-data.json
-cities_data.json
+result_cities_data.json
+saved_data_from_api.json

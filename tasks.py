@@ -1,7 +1,9 @@
+import json
 import logging
 from concurrent.futures import ThreadPoolExecutor
 from multiprocessing import Queue, Process
 from operator import itemgetter
+from threading import Thread, Lock
 from typing import Optional, Any
 from pydantic import parse_obj_as
 from api_client import YandexWeatherAPI
@@ -118,43 +120,45 @@ class DataAggregationTask(Process):
         city_data[list(city_data.keys())[0]]['total_comfort_hors'] = total_comfort_hors
         return city_data
 
+    @staticmethod
+    def save_data_to_file(filename: str = None, data: dict = None):
+        lock = Lock()
+        with lock:
+            with open(filename, 'a') as f:
+                json.dump(data, f, sort_keys=True, indent=4)
+
     def run(self):
-        all_cities_data = {}
         while True:
             if self.queue.empty():
-                save_json_data_to_file(
-                    json_data=self.all_cities_data,
-                    filename=self.filename
-                )
+                cities_data = DataAnalyzingTask.all_cities_rating(self.all_cities_data)
+                threads = [Thread(target=DataAggregationTask().save_data_to_file,
+                                  args=(self.filename, data, )) for data in cities_data]
+                for thread in threads:
+                    thread.start()
+                for thread in threads:
+                    thread.join()
                 logger.info(f'Данные по городам сохранены в файл {self.filename}')
                 break
             city_data = self.queue.get()
             self.all_cities_data.update(self.aggregation_city_data(city_data))
-        # return self.all_cities_data
+        return cities_data
 
 
 class DataAnalyzingTask:
-    # def __int__(self):
-    #     self.cities_data = DataAggregationTask()
-
-    def rating(self, cities_data: dict = None):  # TODO
-        total_cities_list = [
-            (city, city_data['total_comfort_hors'], city_data['total_avg_temp'],)
-            for city, city_data in cities_data.items()
-        ]
-        rating_all_cities = sorted(total_cities_list, key=itemgetter(2), reverse=True)
 
     @staticmethod
-    def rating_analysis(filename: str = None):
+    def all_cities_rating(cities_data: dict = None) -> dict | None:
         """
-        Вычисление и вывод рейтинга по городам
+        Вычисление, добавление рейтинга в сводную таблицу и вывод победителей
         """
-        cities_data = read_json_data_from_file(filename=filename)
         total_cities_list = [
             (city, city_data['total_comfort_hors'], city_data['total_avg_temp'],)
             for city, city_data in cities_data.items()
         ]
         rating_all_cities = sorted(total_cities_list, key=itemgetter(2), reverse=True)
+        for city in enumerate(rating_all_cities, 1):
+            cities_data[city[1][0]].update({'rating': city[0]})
+
         best_city = rating_all_cities[0]
         matching_rating_cities_list = []
         for city in rating_all_cities:
@@ -162,5 +166,4 @@ class DataAnalyzingTask:
                 matching_rating_cities_list.append(city)
                 print(f'Победитель рейтинга {city[0]} средняя температура за период составила {city[2]} градуса, '
                       f'кол-во благоприятных дней: {city[1]}')
-
-        return matching_rating_cities_list
+        return cities_data

@@ -39,11 +39,10 @@ def test_tasks(queue):
 
     DataAggregationTask(queue, filename=TEST_CITIES_DATA_FILE)
 
-    best_cities = DataAnalyzingTask.rating_analysis(filename=TEST_CITIES_DATA_FILE)
-    best_first_city = best_cities[0]
-    for best_city in best_cities:
-        assert best_city[2] >= best_first_city[2], \
-            f'Для города {best_city[0]} средняя температура за период ниже, чем {best_first_city[0]} - ERROR'
-        logger.info('Рейтинг составлен верно - OK!')
+    cities_data = read_json_data_from_file(filename=TEST_CITIES_DATA_FILE)
+
+    cities_rating = DataAnalyzingTask.all_cities_rating(cities_data)
+    assert cities_data == cities_rating, 'Ошибка добавления рейтинга - ERROR!'
+    logger.info('Рейтинг добавлен верно - OK!')
 
     os.remove(TEST_API_DATA_FILE)
